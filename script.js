@@ -15,13 +15,13 @@ $(document).ready(function () {
 
 // typing animation script 
 var typed = new Typed(".typing",{
-    strings:["Frontend Web developer", "UI designer", "Blogger", "Freelancer", "Explorer"],
+    strings:["Web Developer", "Team Player", "Coder"],
     typeSpeed: 100,
     backSpeed: 60,
     loop:true
 });
 var typed = new Typed(".typing-2",{
-    strings:["Frontend Web developer", "UI designer", "Blogger", "Freelancer", "Explorer"],
+    strings:["Web Developer", "Team Player", "Coder"],
     typeSpeed: 100,
     backSpeed: 60,
     loop:true
