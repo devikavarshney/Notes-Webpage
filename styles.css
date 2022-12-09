@@ -18,13 +18,13 @@ html{
     position: fixed;
     z-index: 999;
     width: 100%;
-    padding: 30px 0px;
+    padding: 60px 0px;
     font-family: 'Ubuntu', 'sans-serif';
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0px;
-    background: crimson;
+    padding: 30px 0px;
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
 }
 .navbar .max-width{
     display: flex;
@@ -36,13 +36,6 @@ html{
     color: #fff;
     font-weight: 600;
 }
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
-}
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -53,13 +46,13 @@ html{
     font-size: 18px;
     font-weight:500 ;
     margin-left: 25px;
+    transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #FB2576;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
-    transition: color 0.3s ease;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -76,7 +69,7 @@ html{
     position: fixed;
     height: 45px;
     width:42px ;
-    background: crimson;
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
     right: 30px;
     bottom:10px ;
     text-align: center;
@@ -99,7 +92,9 @@ html{
 /* Home section styling */
 .home{
     display: flex;
-    background: url("images/bg-3.jpg") no-repeat center;
+    background: url("images/bgnext.jpg") no-repeat center fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode:overlay;
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -107,7 +102,7 @@ html{
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
-    margin: auto 0 auto 40px;
+    margin: auto 0 auto 220px;
 }
 .home .home-content .text-1{
     font-size: 27px;
@@ -122,22 +117,23 @@ html{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: #FB2576;
     font-weight: 500;
 }
 .home .home-content a {
     display: inline-block;
-    background: crimson;
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
     color: #fff;
     font-size: 23px;
     padding: 10px 32px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid linear-gradient(to bottom right, #FB2576, #4700D8);
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-   color: crimson; 
+   color: #FB2576;
+   border: 2px solid #fb2576;
    background: none;
 }
 
@@ -179,7 +175,7 @@ section .title::after{
     left: 50%;
     font-size: 20px;
     font-weight: 500;
-    color: crimson;
+    color: linear-gradient(to bottom right, #FB2576, #4700D8);
     padding: 5px;
     background: #fff;
     transform: translate(-50%);
@@ -210,26 +206,26 @@ section .title::after{
     text-align: justify;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: #4700D8;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background-image: linear-gradient(to bottom right, #FB2576, #4700D8);
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 8px 22px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
-    background: none;
+    color: #FB2576;
+   border: 2px solid #fb2576;
+   background: none;
 }
 
 /* Services section styling  */
@@ -254,7 +250,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover {
-    background: crimson;
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -264,7 +260,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: #FB2576;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i {
@@ -293,19 +289,19 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: crimson;
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
     color: #fff;
     font-size: 17px;
     font-weight: 500;
     padding: 6px 18px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid linear-gradient(to bottom right, #FB2576, #4700D8);
     transition: all 0.3s ease;
 }
 
 .skills .skills-content .left a:hover{
-    color: crimson;
+    color: linear-gradient(to bottom right, #FB2576, #4700D8);
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -334,7 +330,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
     border-radius: 6px;
 }
 .skills-content .right  .java::before{
@@ -374,7 +370,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .hobbies .carousel .card:hover{
-    background: crimson;
+    background: #fb2576;
 }
 .hobbies .carousel .card .box{
     display: flex;
@@ -396,7 +392,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid #FB2576;
     transition: all 0.3s ease;
 }
 .hobbies .carousel .card:hover img{
@@ -412,7 +408,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #FB2576;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -421,8 +417,8 @@ section .title::after{
 }
 .owl-dot.active:hover,
 .owl-dot.active{
-    background: crimson!important;
-    }
+    background: #fb2576;    
+}
 
 /* contact section styling  */
 .contact .title::after{
@@ -452,7 +448,7 @@ text-align: justify;
 }
 .contact .contact-content .row  i{
     font-size: 25px;
-    color: crimson;
+    color: #4700D8;
 }
 .contact .contact-content .row-2{
     display: flex;
@@ -462,7 +458,7 @@ text-align: justify;
 .contact .contact-content .row-2  i{
     font-size: 25px;
     margin-right: 20px;
-    color: crimson;
+    color: linear-gradient(to bottom right, #FB2576, #4700D8);
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -505,24 +501,26 @@ text-align: justify;
     padding-top: 10px;
     resize: none;
 }
-.contact .right form .button{
+.contact .right form .button a{
     height: 47px;
-    width: 170px ;
+    width: 170px;
+    padding-top: 50px;
 }
-.contact .right form .button button{
+.contact .right form .button a{
     width: 100%;
     height: 100%;
-    border: 2px solid crimson;
+    padding:10px 20px;
+    border: 2px solid linear-gradient(to bottom right, #FB2576, #4700D8);
     border-radius: 6px;
-    background: crimson;
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
     color: white;
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.contact .right form .button button:hover{
-    color: crimson;
+.contact .right form .button a:hover{
+    color: linear-gradient(to bottom right, #FB2576, #4700D8);
     background: none;
 }
 
@@ -534,7 +532,7 @@ footer{
     text-align: center;
 }
 footer span a {
-    color: crimson;
+    color: #FB2576;
     text-decoration:none;
 }
 footer span a:hover{
