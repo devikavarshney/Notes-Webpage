@@ -370,7 +370,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .hobbies .carousel .card:hover{
-    background: #fb2576;
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
 }
 .hobbies .carousel .card .box{
     display: flex;
