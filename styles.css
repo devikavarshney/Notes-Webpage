@@ -141,13 +141,13 @@ html{
 section{
     padding:100px 0 ;
 }
-.about .about-content , .services .serv-content, .contact .contact-content, .skills .skills-content{
+.about .about-content , .services .serv-content, .contact .contact-content, .skills .skills-content, .education .education-content{
     display: flex;
     flex-wrap: wrap ;
     align-items: center;
     justify-content: space-between;
 }
-.about, .services, .skills , .hobbies, .contact, footer{
+.about, .services, .skills , .hobbies, .contact, .project, .education, footer{
     font-family: 'Poppins', sans-serif;
 }
 section .title{
@@ -229,14 +229,14 @@ section .title::after{
 }
 
 /* Services section styling  */
-.services, .hobbies{
+.services, .hobbies, .project{
     color: #fff;
     background: #111;
 }
-.services .title::before , .hobbies .title::before{
+.services .title::before , .hobbies .title::before,  .project .title::before{
     background: #fff;
 }
-.services .title::after, .hobbies .title::after{
+.services .title::after, .hobbies .title::after, .project .title::after{
     background:#111;
     content: "what I can do";
 }
@@ -334,7 +334,7 @@ section .title::after{
     border-radius: 6px;
 }
 .skills-content .right  .java::before{
-    width: 50%;
+    width: 85%;
 }
 .skills-content .right  .html::before{
     width: 90%;
@@ -352,11 +352,77 @@ section .title::after{
     width: 30%;
 }
 .skills-content .right  .sql::before{
-    width: 30%;
+    width: 70%;
 }
 .skills-content .right  .figma::before{
-    width: 85%;
+    width: 90%;
 }
+
+
+/* education section styling */
+.education .title::after{
+    content: "where I studied";
+}
+.education .education-content .column{
+    width: calc(50% - 30px);
+}
+.education .education-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.education .education-content .left p{
+    text-align: justify;
+}
+.education .education-content .left a{
+    display: inline-block;
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 6px 18px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid linear-gradient(to bottom right, #FB2576, #4700D8);
+    transition: all 0.3s ease;
+}
+
+.education .education-content .left a:hover{
+    color: linear-gradient(to bottom right, #FB2576, #4700D8);
+    background: none;
+}
+.education .education-content .right .bars{
+    margin-bottom: 15px;
+}
+.education .education-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.education .education-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.education .education-content .right  .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+    border-radius: 6px;
+}
+.education .education-content .right  .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
+    border-radius: 6px;
+}
+
+
+
 
 /* Hobbies section styling  */
 .hobbies .title::after{
@@ -419,6 +485,51 @@ section .title::after{
 .owl-dot.active{
     background: #fb2576;    
 }
+
+
+/* projects section styling  */
+.project .title::after{
+    content: "what I have done";
+}
+.project .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.project .carousel .card:hover{
+    background: linear-gradient(to bottom right, #FB2576, #4700D8);
+}
+.project .carousel .card .box{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.project .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.project .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.project .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #FB2576;
+    transition: all 0.3s ease;
+}
+.project.carousel .card:hover img{
+    border-color: #fff;
+}
+
+
+
 
 /* contact section styling  */
 .contact .title::after{
@@ -618,12 +729,12 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    .skills .skills-content .column, .education .education-content .column
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
-    .skills{
+    .skills, .education{
         padding-bottom: 0;
     }
 }
